@@ -4,26 +4,29 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Etch A Sketch</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="main.css" />
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">
-                You are using an <strong>outdated</strong> browser. Please
-                <a href="#">upgrade your browser</a> to improve your experience.
-            </p>
-        <![endif]-->
-        <div id="content-container">
-            <div id="grid-container"></div>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Etch A Sketch</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Etch a Sketch</h1>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="content-container">
+      <div id="grid-container"></div>
+    </div>
 
-        <button id="reset">Reset</button>
-        <script src="main.js" asyncs></script>
-    </body>
+    <button id="reset">Reset</button>
+    <input id="new-size" type="range" min="10" max="50" defaultValue="16" />
+
+    <script src="main.js" asyncs></script>
+  </body>
 </html>
