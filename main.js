@@ -1,6 +1,6 @@
 const container = document.getElementById('grid-container');
 const resetGridButton = document.getElementById('reset-grid');
-const newGridButton = document.getElementById('new-grid');
+// const newGridButton = document.getElementById('new-grid');
 const gridSize = document.getElementById('size-slider');
 const sizeLabel = document.getElementById('size-label');
 
@@ -30,10 +30,10 @@ function makeNewGrid() {
 }
 
 //make a new grid based on slider size
-newGridButton.addEventListener('click', function () {
-    document.querySelectorAll('.grid-item').forEach((e) => e.remove());
-    makeGrid(gridSize.value, gridSize.value);
-});
+// newGridButton.addEventListener('click', function () {
+//     document.querySelectorAll('.grid-item').forEach((e) => e.remove());
+//     makeGrid(gridSize.value, gridSize.value);
+// });
 
 //reset the grid when the reset button is clicked
 resetGridButton.addEventListener('click', removeColor);
