@@ -21,14 +21,22 @@
             </p>
         <![endif]-->
         <div id="content-container">
+            <div id="user-controls">
+                <button id="reset-grid">Reset Drawing</button>
+                <!-- <input id="color-picker" type="color" /> -->
+                <div id="slider-container">
+                    <input
+                        id="size-slider"
+                        type="range"
+                        min="10"
+                        max="40"
+                        value="16"
+                    />
+                    <label id="size-label" for="size-slider"></label>
+                </div>
+            </div>
             <div id="grid-container"></div>
         </div>
-
-        <button id="reset-grid">Reset Drawing</button>
-        <!-- <input id="color-picker" type="color" /> -->
-        <input id="size-slider" type="range" min="10" max="40" value="16" />
-        <label id="size-label" for="size-slider"></label>
-
         <script src="main.js" asyncs></script>
     </body>
 </html>
