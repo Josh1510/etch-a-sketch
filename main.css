@@ -3,16 +3,41 @@
     --grid-rows: 1;
     --background: #eeeeee;
     --border: #b8b8b8;
+    --square-colour: #05004d;
 }
 body {
     background-color: var(--background);
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #content-container {
-    width: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-controls {
+    width: 100%;
+    padding: 10px 100% 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+#slider-container {
+    min-width: 300px;
+    padding-top: 5%;
+}
+
+#size-slider {
+    min-width: 260px;
 }
 
 #grid-container {
@@ -22,14 +47,14 @@ body {
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     width: 650px;
     height: 650px;
+
     border: 1px solid var(--border);
 }
 
 .grid-item {
     border: 1px solid var(--border);
-    text-align: center;
 }
 
 .change-color {
-    background-color: #000;
+    background-color: var(--square-colour);
 }
