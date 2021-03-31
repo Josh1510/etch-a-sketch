@@ -23,7 +23,10 @@ function makeGrid(gridsize) {
 makeGrid(16, 16);
 
 function makeNewGrid() {
-    document.querySelectorAll('.grid-item').forEach((e) => e.remove());
+    // document.querySelectorAll('.grid-item').forEach((e) => e.remove());
+    document.querySelectorAll('.grid-item').forEach(function (e) {
+        return e.remove();
+    });
     makeGrid(gridSize.value);
 }
 
